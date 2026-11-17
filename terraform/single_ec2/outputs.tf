@@ -1,3 +1,10 @@
-output "public_ip" { value = aws_instance.app.public_ip }
-output "frontend_url" { value = "http://${aws_instance.app.public_ip}:3000" }
-output "backend_health_url" { value = "http://${aws_instance.app.public_ip}:5000/api/health" }
+output "public_ip" {
+
+  value = aws_instance.app.public_ip
+}
+output "frontend_url" {
+  value = "http://${aws_instance.app.public_ip}:3000"
+}
+output "backend_health_url" {
+  value = "http://${aws_instance.app.public_ip}:5000/api/health"
+}

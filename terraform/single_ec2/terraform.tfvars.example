@@ -1,0 +1,6 @@
+region                 = "ap-southeast-2"
+project_name            = "tutedude-devops"
+ami_id                  = "ami-REPLACE_WITH_UBUNTU_22_04_ID"
+instance_type           = "t3.micro"
+key_name                = "REPLACE_WITH_EXISTING_EC2_KEY_PAIR"
+allowed_ssh_cidr        = "REPLACE_WITH_YOUR_PUBLIC_IP/32"

@@ -1,3 +1,6 @@
 #!/bin/bash
-apt-get update -y && apt-get install -y python3-pip python3-venv
-# Install project source, dependencies, then run Flask bound to 0.0.0.0:5000 under systemd.
+set -euxo pipefail
+apt-get update -y && apt-get install -y docker.io
+systemctl enable --now docker
+docker pull krishna04chandak/tutedude-flask-backend:1.0
+docker run -d --restart unless-stopped --name flask -p 5000:5000 krishna04chandak/tutedude-flask-backend:1.0
