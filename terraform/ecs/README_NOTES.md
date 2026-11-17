@@ -1,0 +1,1 @@
+ECS task definitions and two ECS services must be added after the ECR images are pushed. Use the included scaffold and see parent README. No AWS resources were provisioned in this environment. Configure a remote S3 backend with a unique bucket before applying in a real account. Do not store credentials in Terraform files.
